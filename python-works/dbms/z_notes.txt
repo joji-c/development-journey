@@ -1,0 +1,53 @@
+Data base management system
+easy store, organize, retrive, update, delete
+2 types:
+    RDBMS(relational database management system):predifined schema. eg:- Mysql,postgres,sqlite
+    NoSql database: no predefined schema. eg:- mongodb
+
+predefined schema: only data can be managed within the given columns of tables
+we use queries to communicate with a database
+we first make a database, then add tables to it, then add columns in it
+record: data within a row with mult columns value
+
+->query for creating a db:
+    create database database_name;          eg:- create database employee_db;
+                                            (everything is in small letters)
+-> query to list all databases:
+    show databases;                          (if table --show tables)
+
+-> query to switch databases:
+    use database_name;
+
+-> query to make table:
+    create table table_name(
+        column_name data_type constraint,
+    );
+
+-> query to describe a created table:
+    desc table_name;
+
+-> query to insert a record:
+    insert into table_name(column_name1,column_name2....) values('value1','value2'....)
+
+-> query to fetch all record from a db table:
+    select * from table_name                   (here * means all colums ,we can also specify individual colun names as well)
+note: we can use  "select * from table_name where condition" to get specific records according to need
+
+-> query to update a record:
+    update table_name set column_name = value where primary_key(column_name) = value
+    if we only give "update table_name set column_name = value" all the value in table of that column will change to given value
+
+-> query to delete a record:
+    delete from table_name where column_name = value                        eg:- id = 3
+
+->query to delete a database,table:
+    drop table table_name;                  drop database database_name;
+
+-> query to update a table:
+    alter table table_name add column_name data_type constraint;
+    we should use modify instead of add if we need to make changes to already existing columns , add only to make new column
+
+-> query to remove all records in a table:
+    truncate table table_name;
+
+

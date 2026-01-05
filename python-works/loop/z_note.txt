@@ -1,0 +1,15 @@
+for loop is used when u know the range of the iteration
+while is used when no range is known 
+break is used to stop an iteration and exit a lopp
+continue is use to skip an iteration and continue the to the loop for the next iteration
+range(stat,stop,step)
+print("message",end="/n")   "/n" is given by default you can change it if needed
+
+we use rows and colums to create pattern:
+rows                 ----> columns
+ ^                  c1      c2      c3  
+ |          r1    (1,1)    (1,2)   (1,3)
+ |          r2    (2,1)    (2,2)   (2,3)
+ |          r3    (3,1)    (3,2)   (3,3)
+
+

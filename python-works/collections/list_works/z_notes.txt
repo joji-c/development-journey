@@ -1,0 +1,8 @@
+list is ordered and mutable and allows duplicates
+
+synatx :- 
+obj_name=list()
+obj_name=[]
+
+
+

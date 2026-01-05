@@ -1,0 +1,20 @@
+-> Data Types:
+numeric : int, decimal, float
+string: varchar(1-9,a-z,Symbols)(varying size), char(a-z)(fixed size), text(no size limitation)
+bool: boolean
+data: DATETIME, DATE, TIME
+enum: should be one of the given values nothing else will be accepted
+
+-> Constraints:
+NULL: none
+NOT NULL: mandatory value, value cant be NULL
+PRIMARY KEY: unique values only
+FORIEGN KEY: show relation with other tables
+UNIQUE: no duplicates
+DEFAULT: default value
+CHECK: condition to check for input value(eg:- check if age > 18 if not it doesnt accept the entry)
+AUTO INCREMENT: ceates a continous num for id, where each one is diff and more records more id increments
+
+-> Aggregate functions:
+max(),min(),count(),sum(),avg()
+

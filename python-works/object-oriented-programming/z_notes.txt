@@ -1,0 +1,50 @@
+oops: prog style where we structure the prog using class and object is called object oriented programming
+class: temp,design,plan for creating object
+object: real world entities
+
+a class can only have -attributes and -methods in it
+class name is always in pascal case
+obj also called instance
+class attributes are called instance variables
+
+oops is more organised than normal way of programming
+
+constructor: its a normal method
+helps initialize instance variables
+constructor has a special name
+    we use class name in java,c++
+    we use constructor in js
+    and we use __init__ in python
+
+constructor calls the initialization immediately when obj is created
+eg:-without constructor:
+                    bank_instance1=Bank()
+                    bank_instance1.set_acc(123,"joji","deposit",1000)
+    with constructor:
+                    bank_instance1=Bank(123,"joji","deposit",1000)
+
+
+oop features:
+-inheritance: child class access parent class attributes and methods
+            single inheritance: a child from parent
+            multi level inheritance: child from parent and parent from grand parent 
+            multiple inheritance: many children from one parent
+
+-polymorphism: same thing acting differently in diff situation (same thing many forms)   
+            MethodOverLoading: same method in same class but diff num of parameters
+            eg:- a 2num sum ,a 3num sum in same class, but same method name (but only 3num sum will work)
+            MethodOverRiding: same method name but used in diff class, with working of inheritance
+**note: python doesnt normally support overloading(used in java)
+
+-abstraction: hiding implementation details    
+
+decorators are used to add extra features to an already existing function
+we have decorators ,we use @ to call them:
+-@property: change a method to a property ,no need for () while calling method
+
+abc: abstract base class, is a module(a python file)
+from abc import ABC,abstractmethod
+ABC: to be inherited by the abstract class
+@abstractmethod: used by abstract meethods in abstract class
+
+when we look for the type of a class object its type will be the '__main__.class_name'

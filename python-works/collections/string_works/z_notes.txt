@@ -1,0 +1,32 @@
+string = sequence of  characters
+string is immutable
+we can use ' '," ",""" """  and str()  to make string
+
+every function inside a class is called a method
+
+->class Class_Name                            note(Class_Names use pascal case)
+        def method1()
+        def method2()
+
+to call method1 we need an class object 
+to create a class object syntax          :-         object_name = Class_name()
+to call method syntax                    :-         object_name.method1()
+
+->string is ordered:
+eg:- text="python"
+here       012345
+
+so print("text[0]")   --->   p
+  ''    ''    [1]     --->   y    .....
+
+we have fstring: used when having mult 
+while printing we can use : print(f"hello {name} its a {greeting}")
+instead of                : print("hello",name,"its a",greetings)
+
+
+
+we can use len(var_name) function to find the lenght of a string 
+
+
+most commonly asked string questions:
+pangram,anagram,palindrome,kangraooword,longest sequence palindrome in given string,merge strings

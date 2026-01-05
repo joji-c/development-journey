@@ -1,0 +1,35 @@
+Enviornment setup:
+    install python interpreter
+    python-->version
+    >pip(python package manager)
+    pandas
+    >pip install pandas
+    numpy
+    >pip install numpy
+    matplotlib
+    >pip install matplotlib
+    >pip list           --to show what all packages are installed
+    >editor (vs code)
+
+Identifier
+variables
+data types:[int,float,str,bool,complex,collection-type:[list,tuple,set,dict]]
+operators:[arthametic,logic,relational,assignment]
+decision_making:[if,if..else,if..elif..else,match case]
+looping:[while,for]break,continue
+functions:
+    *args,**kwargs
+    decorators(@decorator_name)
+    [*recursion]
+str,list,tuple,set,dict and its methods
+nested collections
+comprehension
+file operations:r,w,a,open()
+csv file process->list of dict[csv.py] (from csv import DictReader())
+error handling:try,except,finally,assert,raise
+oop:class,object,constructor(__init__),self,super()
+inheritance:single,multi level,multiple
+polymorphism:method overloading, method overriding
+abstraction:from abc import ABC,abstrctmethod(@abstrctmethod)
+deep copy and shallow copy
+inbuilt-functions:map,filter,reduce,any,all

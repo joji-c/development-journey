@@ -1,0 +1,10 @@
+dictionary are different from others ,it doesnt consider order and uses keys instead of index
+each key should be unique but values can be duplicated and is mutable
+
+its syntax:-
+    dict={"name":"joji",
+    "age":22}
+
+we call the value joji using the key name
+print(dict["name"])
+

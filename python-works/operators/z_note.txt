@@ -1,0 +1,32 @@
+
+operator precidance:
+
+()                               highest priority
+**                                     |
+* , / , // , %                         |
++ , _                                  |
+< , > , <= , >= , == , !=              |
+and , or , not                         |
+=                                lowest priority
+
+
+
+
+examples
+
+2**3**2 = 2**(3**2) = 512  python changes the second exponent 
+5+4/2-1*5 in this type of situation use bodmas rule for precidence where div comes first then multiplication
+
+
+bodmas pprecidence:  () ,** ,/ ,* ,+ ,-
+
+arthematic operator: +,-,*,%,/,//,**
+logic operator:and,or,not
+relational operator:<,>,=,!=,<=,>=
+membership operator: in
+identity operator: is
+
+
+in : checks if an object exists within a sequence(membership operator)
+== : checks if the values are similar(equality operator)
+is : checks if variable point to the same object

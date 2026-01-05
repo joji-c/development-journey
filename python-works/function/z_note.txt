@@ -1,0 +1,33 @@
+we can create a function for that we need two steps
+first we define the function
+then we call the function
+
+->function defition syntax
+
+def function_name (parameter):       #here the parameter can be the number of inputs required if any
+    function body
+
+->calling a function syntax
+
+function_name(#all values added here is called an argument)
+
+
+ther are function without parameters and no return
+with parameters and no return
+with parameters and with return
+
+->return function:
+here the value after the function is returned back the the called location it can either be stored in a variable or 
+wrapped in a print
+
+->pass function:
+this is used to make the error of an incomplete fucntion to be removed so that user can fix it later
+
+if we give an value to an parameter within the defining stage it will be considereda default
+value for that parameter ,if in the calling no value is given to the argument then this value will be used as a default
+
+we can use * inside a def to make it accept any number of arguments
+in def name(*args) --> we get a infinite num entry as a tuple
+in def name(**kwargs) --> we get a infinite num entry as a dictionary
+
+

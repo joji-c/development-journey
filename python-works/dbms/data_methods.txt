@@ -1,0 +1,36 @@
+we can use ' -- ' then all we type will be considered as comments
+rate=a and rate=b      or      between a and b;
+rate=a or rate=b       or      in(a,b);
+use distinct to get only unique values from a column
+use group by to catogorize according to a column value and its condition is checked with having
+we use order by column_name to sort, and its default in asc and to change into descending order use desc
+we can use 'as' to give alias to filtered select
+we use limit to shows how many records to be shown
+offset is used to show how many records to be skipped
+repeatation is called redundancy in database side
+type of relations:
+    1:m,1:1,m:m 
+1:m is also called foriegn key
+if its a foriegn key and unique then its 1:1
+inner join(syntax):returns matching records from both table
+    -select * from left_table inner join right_table on condition
+left join(syntax):all of left table and matching ones from right
+    -select * from left_table left join right_table on condition
+right join(syntax):all right table and matching ones from left
+    -select * from left_table right join right_table on condition
+
+foriegn key should be primary key of another table
+should have a column for showing similar values as the othe table within this table for realting them both
+foriegn key column_name references another_table.column_name
+
+like used to find similar values (start--'ar%',stop--'%ar',middle--'%ar%')
+eg:- select * from table where name like '%ck'          here all name that ends with ck is shown
+
+auto commit saves all the changes in Mysql, its on by default
+to off it -- set autocommit = off;
+we can manually save using (commit;)
+and return to the save point using (rollback;)
+
+view are virtual tables that saves a certain table for future editing in that table
+create view view_name as select column1,column2 from table_name;            -- to make a view
+drop view view_name;                                                        -- to drop a view

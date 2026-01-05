@@ -1,0 +1,2 @@
+we have to connect python to db always
+any changes made in query that actually makes changes should be commited to run as they are not auto saved from python

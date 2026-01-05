@@ -1,0 +1,34 @@
+git is a version control system
+git hub = a web application that serves the uses of git
+help the user track all the changes made to a project and revisit them if necessary
+
+to start with git:
+to see git version -> git --version                                  (if no verion download git from browser)
+to see the git config details -> git config --list
+to see the user and his changes made use -> git log
+    to use this we need to have username and email in git if not add them
+    to add or change username -> git config --global user.name "username"
+    to add or change email -> git config --global user.email "user@gmail.com"
+to check if git is upto date or untracked use -> git status
+
+RR - remote repository
+LWS - local work space
+LR - local repository
+SA - staging area
+
+git_clone[RR exact copy LWS]
+git_push[LR changes RR]
+git_pull[RR changes LWS]
+git_add[adding chnages to SA]
+git_commit[adding staged files to LR]
+
+if file not a clone from git then add it to git using -> git init
+to add all changes from there to SA -> git add -A 
+    to use this the file should be in git or its clone else add it
+then add the changes from SA to LR using -> git commit -m "enter your message"
+
+if a file/folder in LWS is untracked it shows a 'U' Symbol to show that
+if a file/folder in LWS has changes it shows a 'M' Symbol to show that
+
+to add a RR -> git remote add name path
+to check RR details -> git remote -v

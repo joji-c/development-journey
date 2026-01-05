@@ -1,0 +1,21 @@
+types of errors:-
+syntax errors
+logic errors
+runtime error(exception)
+
+we can only handle runtime error(exception)
+all errors are class and a class that contains all errors are "Exception"
+
+used blocks:-
+try:
+    doubtful code(work if no error)
+except:
+    handling code(work if error)
+finally:
+    cleanup processing(always work)
+
+used keywords:-
+raise - used to throw custom errors from user
+assert - used to check our code or debug it
+
+we have many predefined errors like index error, value error, key error .etc

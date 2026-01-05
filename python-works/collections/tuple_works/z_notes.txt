@@ -1,0 +1,13 @@
+tuple is immutable,ordered and allows duplicates
+
+its syntax:-
+tp=(10,)
+tp=tuple()
+
+once defined no further changes can be done in the original tuple
+
+if ther is only one element in a tuple like then it is considered as a integer we have to add a comma 
+at the end of it to m ake it a tuple
+(10)---integer
+(10,)---tuple
+

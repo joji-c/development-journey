@@ -1,0 +1,7 @@
+set is a unordered,mutable and does not allow any duplicates
+
+its syntax:-
+st={10,20}
+st=set()
+
+in a set made using '{10,20}' we need values in the curly brackets else its considered an dictionary
