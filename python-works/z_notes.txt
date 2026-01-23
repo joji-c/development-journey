@@ -5,8 +5,6 @@ we can add two string types using+ symbol its called concatination
 
 we use 'as' to assign nick names 
 
-do not copy paste csv add the downloaded file to anpther file in vs code
-
 zip() used to pair two lists into dict
 
 a python file is called a module
