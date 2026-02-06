@@ -15,3 +15,312 @@ enumerate: give both index and num from a lists
 for index,num in enumerate(list):
     print(index,num)
 
+operator precidance:
+()                               highest priority
+**                                     |
+* , / , // , %                         |
++ , _                                  |
+< , > , <= , >= , == , !=              |
+and , or , not                         |
+=                                lowest priority
+
+examples:
+2**3**2 = 2**(3**2) = 512  python changes the second exponent 
+5+4/2-1*5 in this type of situation use bodmas rule for precidence where div comes first then multiplication
+
+bodmas pprecidence:  () ,** ,/ ,* ,+ ,-
+
+arthematic operator: +,-,*,%,/,//,**
+logic operator:and,or,not
+relational operator:<,>,=,!=,<=,>=
+membership operator: in
+identity operator: is
+
+in : checks if an object exists within a sequence(membership operator)
+== : checks if the values are similar(equality operator)
+is : checks if variable point to the same object
+
+for loop is used when u know the range of the iteration
+while is used when no range is known 
+break is used to stop an iteration and exit a lopp
+continue is use to skip an iteration and continue the to the loop for the next iteration
+range(stat,stop,step)
+print("message",end="/n")   "/n" is given by default you can change it if needed
+
+we use rows and colums to create pattern:
+rows                 ----> columns
+ ^                  c1      c2      c3  
+ |          r1    (1,1)    (1,2)   (1,3)
+ |          r2    (2,1)    (2,2)   (2,3)
+ |          r3    (3,1)    (3,2)   (3,3)
+
+string = sequence of  characters
+string is immutable
+we can use ' '," ",""" """  and str()  to make string
+
+every function inside a class is called a method
+
+->class Class_Name                            note(Class_Names use pascal case)
+        def method1()
+        def method2()
+
+to call method1 we need an class object 
+to create a class object syntax          :-         object_name = Class_name()
+to call method syntax                    :-         object_name.method1()
+
+->string is ordered:
+eg:- text="python"
+here       012345
+
+so print("text[0]")   --->   p
+  ''    ''    [1]     --->   y    .....
+
+we have fstring: used when having mult 
+while printing we can use : print(f"hello {name} its a {greeting}")
+instead of                : print("hello",name,"its a",greetings)
+
+we can use len(var_name) function to find the lenght of a string 
+
+most commonly asked string questions:
+pangram,anagram,palindrome,kangraooword,longest sequence palindrome in given string,merge strings
+
+list is ordered and mutable and allows duplicates
+synatx :- 
+obj_name=list()
+obj_name=[]
+
+dictionary are different from others ,it doesnt consider order and uses keys instead of index
+each key should be unique but values can be duplicated and is mutable
+its syntax:-
+    dict={"name":"joji",
+    "age":22}
+
+we call the value joji using the key name
+print(dict["name"])
+
+set is a unordered,mutable and does not allow any duplicates
+its syntax:-
+st={10,20}
+st=set()
+in a set made using '{10,20}' we need values in the curly brackets else its considered an dictionary
+
+tuple is immutable,ordered and allows duplicates
+its syntax:-
+tp=(10,)
+tp=tuple()
+once defined no further changes can be done in the original tuple
+if ther is only one element in a tuple like then it is considered as a integer we have to add a comma 
+at the end of it to m ake it a tuple
+(10)---integer
+(10,)---tuple
+
+
+
+we can create a function for that we need two steps
+first we define the function
+then we call the function
+
+->function defition syntax
+
+def function_name (parameter):       #here the parameter can be the number of inputs required if any
+    function body
+
+->calling a function syntax
+
+function_name(#all values added here is called an argument)
+
+
+ther are function without parameters and no return
+with parameters and no return
+with parameters and with return
+
+->return function:
+here the value after the function is returned back the the called location it can either be stored in a variable or 
+wrapped in a print
+
+->pass function:
+this is used to make the error of an incomplete fucntion to be removed so that user can fix it later
+
+if we give an value to an parameter within the defining stage it will be considereda default
+value for that parameter ,if in the calling no value is given to the argument then this value will be used as a default
+
+we can use * inside a def to make it accept any number of arguments
+in def name(*args) --> we get a infinite num entry as a tuple
+in def name(**kwargs) --> we get a infinite num entry as a dictionary
+
+here we use var_name=open(file_path,mode) to acces the file into with we need to work in
+mode:-  write->"w"
+        read->"r"  ("r" is the default value)
+        append->"a"
+
+all entries in the .txt file is str so if reading we get string and 
+if writing we have to change the element into a string
+
+we should always close the file that we open using var_name.close()
+or use with 
+
+the file path for reading file should be existing before calling path but
+a new path without existing file can be made for writing as it creates a new file 
+
+fr.readline() is used to display a line default pointer at 0 and when using aloop again 
+that line will not be considered
+
+oops: prog style where we structure the prog using class and object is called object oriented programming
+class: temp,design,plan for creating object
+object: real world entities
+
+a class can only have -attributes and -methods in it
+class name is always in pascal case
+obj also called instance
+class attributes are called instance variables
+
+oops is more organised than normal way of programming
+
+constructor: its a normal method
+helps initialize instance variables
+constructor has a special name
+    we use class name in java,c++
+    we use constructor in js
+    and we use __init__ in python
+
+constructor calls the initialization immediately when obj is created
+eg:-without constructor:
+                    bank_instance1=Bank()
+                    bank_instance1.set_acc(123,"joji","deposit",1000)
+    with constructor:
+                    bank_instance1=Bank(123,"joji","deposit",1000)
+
+
+oop features:
+-inheritance: child class access parent class attributes and methods
+            single inheritance: a child from parent
+            multi level inheritance: child from parent and parent from grand parent 
+            multiple inheritance: many children from one parent
+
+-polymorphism: same thing acting differently in diff situation (same thing many forms)   
+            MethodOverLoading: same method in same class but diff num of parameters
+            eg:- a 2num sum ,a 3num sum in same class, but same method name (but only 3num sum will work)
+            MethodOverRiding: same method name but used in diff class, with working of inheritance
+**note: python doesnt normally support overloading(used in java)
+
+-abstraction: hiding implementation details    
+
+decorators are used to add extra features to an already existing function
+we have decorators ,we use @ to call them:
+-@property: change a method to a property ,no need for () while calling method
+
+abc: abstract base class, is a module(a python file)
+from abc import ABC,abstractmethod
+ABC: to be inherited by the abstract class
+@abstractmethod: used by abstract meethods in abstract class
+
+when we look for the type of a class object its type will be the '__main__.class_name'
+
+types of errors:-
+syntax errors
+logic errors
+runtime error(exception)
+
+we can only handle runtime error(exception)
+all errors are class and a class that contains all errors are "Exception"
+
+used blocks:-
+try:
+    doubtful code(work if no error)
+except:
+    handling code(work if error)
+finally:
+    cleanup processing(always work)
+
+used keywords:-
+raise - used to throw custom errors from user
+assert - used to check our code or debug it
+
+we have many predefined errors like index error, value error, key error .etc
+
+Data base management system
+easy store, organize, retrive, update, delete
+2 types:
+    RDBMS(relational database management system):predifined schema. eg:- Mysql,postgres,sqlite
+    NoSql database: no predefined schema. eg:- mongodb
+
+predefined schema: only data can be managed within the given columns of tables
+we use queries to communicate with a database
+we first make a database, then add tables to it, then add columns in it
+record: data within a row with mult columns value
+
+->query for creating a db:
+    create database database_name;          eg:- create database employee_db;
+                                            (everything is in small letters)
+-> query to list all databases:
+    show databases;                          (if table --show tables)
+
+-> query to switch databases:
+    use database_name;
+
+-> query to make table:
+    create table table_name(
+        column_name data_type constraint,
+    );
+
+-> query to describe a created table:
+    desc table_name;
+
+-> query to insert a record:
+    insert into table_name(column_name1,column_name2....) values('value1','value2'....)
+
+-> query to fetch all record from a db table:
+    select * from table_name                   (here * means all colums ,we can also specify individual colun names as well)
+note: we can use  "select * from table_name where condition" to get specific records according to need
+
+-> query to update a record:
+    update table_name set column_name = value where primary_key(column_name) = value
+    if we only give "update table_name set column_name = value" all the value in table of that column will change to given value
+
+-> query to delete a record:
+    delete from table_name where column_name = value                        eg:- id = 3
+
+->query to delete a database,table:
+    drop table table_name;                  drop database database_name;
+
+-> query to update a table:
+    alter table table_name add column_name data_type constraint;
+    we should use modify instead of add if we need to make changes to already existing columns , add only to make new column
+
+-> query to remove all records in a table:
+    truncate table table_name;
+
+git is a version control system
+git hub = a web application that serves the uses of git
+help the user track all the changes made to a project and revisit them if necessary
+
+to start with git:
+to see git version -> git --version                                  (if no verion download git from browser)
+to see the git config details -> git config --list
+to see the user and his changes made use -> git log
+    to use this we need to have username and email in git if not add them
+    to add or change username -> git config --global user.name "username"
+    to add or change email -> git config --global user.email "user@gmail.com"
+to check if git is upto date or untracked use -> git status
+
+RR - remote repository
+LWS - local work space
+LR - local repository
+SA - staging area
+
+git_clone[RR exact copy LWS]
+git_push[LR changes RR]
+git_pull[RR changes LWS]
+git_add[adding chnages to SA]
+git_commit[adding staged files to LR]
+
+if file not a clone from git then add it to git using -> git init
+to add all changes from there to SA -> git add -A 
+    to use this the file should be in git or its clone else add it
+then add the changes from SA to LR using -> git commit -m "enter your message"
+
+if a file/folder in LWS is untracked it shows a 'U' Symbol to show that
+if a file/folder in LWS has changes it shows a 'M' Symbol to show that
+
+to add a RR -> git remote add name path
+to check RR details -> git remote -v
