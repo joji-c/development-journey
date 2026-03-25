@@ -1,3 +1,4 @@
+log
 configeration:
 to start with git:                                       (if no verion download git from browser)
 
